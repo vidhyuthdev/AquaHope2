@@ -1,0 +1,53 @@
+.container{
+    background-image: url('https://indiaenvironment.org/wp-content/uploads/2019/02/home-cover.jpg');
+    position: relative;
+    z-index: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.overlay{
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.7);
+}
+.overlay>h2{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+.content{
+    background-color: #003C62;
+    padding:50px 0px;
+    
+}
+.imgholder{
+    display: flex;
+    justify-content: center;
+}
+.imgholder>img{
+    height:250px;
+    width:250px;
+    border-radius: 40px;
+    align-content: center;
+}
+.status{
+   margin:30px;
+    text-align: center;
+    font-size:24px;
+}
+.content>*{
+    color:white;
+}
+.detailed{
+    margin-top: 40px;
+    margin:40px 20vw;
+}
+@media (max-width:425px) {
+    .status{
+        font-size: 20px;;
+    }
+    
+}

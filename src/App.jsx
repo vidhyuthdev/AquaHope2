@@ -8,6 +8,7 @@ import Projects from './Pages/Projects/Projects'
 import Contribute from './Pages/Contribute/Contribute'
 import Footer from './Components/Footer/Footer'
 import Contact from './Pages/Contact/Contact'
+import Project from './Pages/Project/Project'
 const App = () => {
   return (
     <BrowserRouter>
@@ -18,6 +19,7 @@ const App = () => {
         <Route path='/projects' element={<Projects/>}/>
         <Route path='/contribute' element={<Contribute/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path="/projects/:id" element={<Project/>} />
       </Routes>
       <Footer/>
     </NavProvider>

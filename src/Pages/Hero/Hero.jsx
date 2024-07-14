@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { useTypewriter,Cursor } from 'react-simple-typewriter'
 import { NavContext } from '../../Components/NavContext'
 import NavPopUp from '../../Components/NavPopUp/NavPopUp'
+
 const Hero = () => {
   const [typeEffect]=useTypewriter({
     words:['Empowerement','Sustainability','Health','Responsibility'],
@@ -15,7 +16,7 @@ const Hero = () => {
   const {nav,setNav}=useContext(NavContext);
  
   return (
-    <div className={styles.herocont}>      
+    <div  className={styles.herocont}>      
       <div className={styles.overlay}>
         <div style={{opacity:'0',height:'2px'}}>a</div>
         <div className={styles.hero2}>
