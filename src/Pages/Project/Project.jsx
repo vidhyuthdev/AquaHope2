@@ -21,7 +21,9 @@ const Project = () => {
       <img src={project.images[1]} alt="" />
      </div>
      <div className={styles.status}>
-      {project.status} in {project.year}
+     {project.status === 'Completed' && `Completed in ${project.year}`}
+     {project.status === 'Ongoing' && `Ongoing since ${project.year}`}
+
      </div>
      <div className={styles.status}>
       {project.description
