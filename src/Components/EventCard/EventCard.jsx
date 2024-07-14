@@ -11,7 +11,7 @@ const EventCard = (props) => {
     <div ref={ref} key={props.index} className={`${props.index % 2 === 0 ? styles.event : styles.oddevent} ${inView ? styles.fadein : ''} ${styles.card}`}>
               {  (props.index%2==0)&&
                 <>
-                  <img className={styles.pic} src={props.obj.url} alt="" srcset="" />
+                  <img className={styles.pic} src={props.obj.url} alt="" srcSet="" />
                   <div className={styles.eventdesc+" rale"}>
                       <h3>{props.obj.year}</h3>
                     <div className={styles.eventdesctext+' rale'}>
@@ -28,7 +28,7 @@ const EventCard = (props) => {
                       {props.obj.desc}
                     </div>
                   </div>
-                  <img className={styles.pic} src={props.obj.url} alt="" srcset="" />                  
+                  <img className={styles.pic} src={props.obj.url} alt="" srcSet="" />                  
                 </>
               }
      </div>
