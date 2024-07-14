@@ -1,0 +1,26 @@
+.color{
+    height:10px;
+    background-color:#5ebb44 
+}
+
+.mainfooter>*{
+    color:#003C62;
+    text-align: center;
+}
+.mainfooter{
+    background-color: #E0F7E0;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    
+
+}
+@media (max-width:768px) {
+    .mainfooter{
+        flex-direction: column; 
+        justify-content: space-around;
+    }
+    
+}

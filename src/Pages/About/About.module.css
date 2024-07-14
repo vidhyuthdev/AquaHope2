@@ -1,0 +1,18 @@
+.aboutcontainer{
+    height: fit-content;
+    background-color:#E0F7E0 ;
+    padding:0px 40px;
+}
+
+.heading{
+    padding-top: 50px;
+    text-align: center;
+    color:#003C62;
+    font-weight: 700;
+    font-size: 30px;
+}
+.events{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}

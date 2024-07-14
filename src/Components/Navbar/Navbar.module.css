@@ -1,0 +1,81 @@
+.navcont{
+    z-index: 2;
+    width:100vw;
+    position: fixed;
+    height:90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 30px;
+    transition: background-color 0.5s ease;
+}
+.whitebg{
+    background-color: white;
+
+}
+.logocont{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    cursor: pointer;
+}
+/* #FFCA0A */
+.logo{
+    height:80px;
+    width:80px;
+    border-radius: 50%;
+}
+.navitems{
+    display: flex;
+    gap:40px;
+    align-items: center;
+}
+.org{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+.org:hover{
+    color: #5ebb44 !important;
+}
+.navlinks{
+    text-decoration: none;
+    color:white; 
+    transition: color 0.4s;   
+}
+.navlinks:hover{
+    color: #5ebb44 !important;;
+}
+.smallscreen{
+    display: none !important;
+    text-decoration: none;
+    color:white; 
+    transition: color 0.4s; 
+}
+.navlinks,.org{
+    transition:color 0.5s ease;
+}
+.smallscreen:hover{
+    color: #5ebb44 !important;;
+}
+.logo.rotate{
+    transition: transform 1.2s ease-in-out;
+}
+.rotate{
+    transform:rotateY(360deg);
+}
+@media (max-width:825px) {
+    .navcont{
+        padding: 0px 10px;
+    }
+    .navlinks{
+        display: none;
+    }
+    .smallscreen{
+        display: initial !important;
+    }
+}
+/* 
+//#0D5178 */

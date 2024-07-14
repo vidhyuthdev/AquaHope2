@@ -1,0 +1,30 @@
+.container{
+    width:100vw;
+    background-color: #003C62;
+    padding-bottom:30px;
+}
+.container>h3{
+    padding-top:30px;
+    text-align: center;
+    color:white;
+    font-size: 30px;
+}
+.blogcont{
+    grid-column-gap: 30px;
+    display: grid;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-row-gap: 30px;
+}
+@media (max-width:768px) {
+    .blogcont{
+        grid-template-rows: repeat(6,1fr);
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+        grid-column-gap: 0px;
+    }
+    
+}

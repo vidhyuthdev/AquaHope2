@@ -1,0 +1,38 @@
+.nav{
+    top:90px;
+    position: fixed;
+    z-index: 20;
+    height:calc(100vh - 90px);
+    width:100vw;
+    display: flex;
+}
+.navleft,.navright{
+    width:50%;
+}
+.navleft{
+    background-color: rgba(0,0,0,0.75);
+    box-sizing: border-box;  
+}
+.navright{
+    background-color: white;
+    padding:20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:50px;
+}
+.navright>a{
+    color:#7DC55E;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+}
+@media (max-width:425px) {
+    .navleft{
+        display: none;
+    }
+    .navright{
+        width:100%;
+    }
+    
+}   
